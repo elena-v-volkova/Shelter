@@ -1,0 +1,425 @@
+.header {
+    height: 112px;
+    align-items: center;
+    background-color: white;
+    width: 1200px;
+    margin: auto;
+
+}
+
+.header-container {
+    height: 120px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.friend-container {
+    height: 1342px;
+}
+
+.logo {
+    display: block;
+    padding-top: 18px;
+
+}
+
+.logo-title {
+    color: #545454;
+}
+
+.logo-subtitle {
+    color: #292929;
+}
+
+.footer {
+    width: 100%;
+}
+
+.nav-menu__link {
+    color: #545454;
+    transition: .3s;
+}
+
+.nav-menu__link:hover,
+.nav-menu__link.active {
+    color: #292929;
+}
+
+.friends-list,
+.friend-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 40px;
+
+}
+
+.friends {
+    background-color: #F6F6F6;
+}
+
+.friends-heading {
+    margin: 0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    color: #545454;
+    padding: 80px 0 58px 0;
+    letter-spacing: 2px;
+}
+
+.friend-item-image {
+    margin-bottom: 27px;
+}
+
+.friend-item {
+    height: 435px;
+    width: 270px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #FAFAFA;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.friend-item:hover {
+    background-color: #FFF;
+}
+
+.friend-item-name {
+    margin: 0 0 30px 0;
+    letter-spacing: 1px;
+}
+
+.friend-item-button {
+    width: 187px;
+    height: 52px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: transparent;
+    border: 2px solid #F1CDB3;
+    font-size: 17px;
+    color: #292929;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.friend-item:hover>.friend-item-button,
+.friend-item-button:hover {
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
+
+}
+
+.pets-contents-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin: auto;
+    padding-top: 31px;
+}
+
+.btn-paginator {
+    border: 2px solid;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.btn-paginator-disabled {
+    border-color: #cdcdcd;
+    background-color: inherit;
+    color: #cdcdcd;
+    cursor: default;
+}
+
+
+.btn-paginator-active {
+    border-color: #f1cdb3;
+    background-color: inherit;
+    color: #292929;
+}
+
+.btn-paginator-num {
+    border-color: #f1cdb3;
+    background-color: #f1cdb3;
+    color: #292929;
+    font-size: 20px;
+    line-height: 23px;
+    cursor: default;
+}
+
+.btn-paginator-active:hover {
+    background-color: #f1cdb3;
+    box-shadow: 0px 2px 35px 7px rgb(13 13 13 / 4%);
+}
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .container {
+        width: 708px;
+        overflow-x: hidden;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .header {
+        width: 708px;
+    }
+
+    .friend-container {
+        height: 1733px;
+    }
+
+    .friends-list,
+    .friend-list-wrapper {
+        gap: 30px 40px;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+
+    .friend-item:nth-child(n+7) {
+        display: none;
+    }
+
+    .pets-contents-nav {
+        padding-top: 12px;
+    }
+
+
+    .friends-heading {
+        padding: 80px 0 27px 0;
+    }
+
+    .footer-col {
+        margin: 0;
+        padding: 0;
+        width: 43%;
+    }
+
+    .footer-col:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .footer-container {
+        padding-top: 35px;
+        height: 639px;
+        background: url(../../assets/images/main/footer-puppy.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 300px 310px;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 300px;
+        overflow-x: hidden;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .header {
+        width: 300px;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+
+    .header__burger::before,
+    .header__burger::after {
+        content: '';
+        background-color: #F1CDB3;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+
+    .header__burger::before {
+        top: 0;
+    }
+
+    .header__burger::after {
+        bottom: 0;
+    }
+
+    .header__burger span {
+        background-color: #F1CDB3;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 100%;
+        background-color: #292929;
+        display: none;
+    }
+
+    .header__burger {
+        top: 4px;
+        margin-left: 15px;
+    }
+
+    /*Burger*/
+
+
+    .header-nav.active .nav-menu {
+        display: flex;
+        padding: 0;
+    }
+
+    .header-nav.active .logo-title {
+        color: #F1CDB3;
+    }
+
+    .header-nav.active .logo-subtitle {
+        color: #FFF;
+    }
+
+    .header-nav.active .nav-menu__link.active {
+        color: #FAFAFA;
+    }
+
+    .header-nav.active .nav-menu__link {
+        color: #CDCDCD;
+    }
+
+    .header-nav.active .nav-menu {
+        height: auto;
+    }
+
+
+    .nav-menu {
+        position: relative;
+        margin-top: 79%;
+        flex-direction: column;
+        align-items: center;
+        gap: 55px 0;
+    }
+
+    /**/
+
+    .friend-container {
+        height: 1649px;
+    }
+
+    .friends-heading {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 44px;
+        letter-spacing: 1.5px;
+        line-height: 31px;
+        padding: 43px 0 41px 0;
+        margin-bottom: 0;
+    }
+
+    .friends-list {
+        justify-content: center;
+    }
+
+    .pets-contents-nav {
+        padding-top: 13px;
+    }
+
+    .friend-list-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 40px;
+        height: 1365px;
+        overflow: hidden;
+        justify-content: center;
+
+    }
+
+
+    .footer-container {
+        height: 809px;
+        padding-top: 34px;
+        background-position: bottom center;
+        background-size: 260px 269px;
+        flex-direction: column;
+        gap: 49px 0;
+    }
+
+    .footer-col {
+        width: 100%;
+        height: 199px;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+
+    }
+
+    .footer-heading {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .footer-col:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .email::before {
+        top: -5px;
+    }
+
+    .phone::before {
+        top: -4px;
+    }
+
+    .location,
+    .email,
+    .phone {
+        margin: 0;
+    }
+
+    .footer-heading {
+        width: 90%;
+    }
+
+    .location {
+        padding-left: 22px;
+    }
+
+    .location::before {
+        top: 9px;
+    }
+
+    .location:last-of-type::before {
+        top: -4px;
+        left: -24px;
+    }
+
+    .adress {
+        height: 215px;
+    }
+
+}
